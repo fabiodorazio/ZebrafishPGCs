@@ -3,11 +3,11 @@
 rna.pgc.256.high <- read.csv('UpregInPGCOnlyAtHigh.txt', sep = '\t')
 rna.soma.256.high <- read.csv('UpregInSomaOnlyAtHigh.txt', sep = '\t')
 
-setwd("~/Desktop/PhD-March-2019-backup/FabioRNAseq (2)/2108/RNAseqtables")
+setwd("../2108/RNAseqtables")
 tpm <- read.csv('tpmStagesFiltered.txt', sep = '\t')
 tpm$colour <- 'black'
 
-setwd("~/Desktop/PhD-March-2019-backup/FabioRNAseq (2)/2108/RNAseqtables/")
+setwd("../2108/RNAseqtables/")
 germ.plasm <- read.csv('UpregInPGCvsSomaAt256cell.txt', sep = ',')
 germ.plasm.id <- unique(germ.plasm$Gene.stable.ID)
 
